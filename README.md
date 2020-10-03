@@ -3,8 +3,7 @@
 Instagram clone coding
 
 ## User OPs
-- [ ] See the feed
-- [ ] Like / Unlike a photo
+- [x] Like / Unlike a photo
 - [ ] Comment on a photo
 - [ ] Search by user
 - [ ] Search by location
@@ -12,11 +11,18 @@ Instagram clone coding
 - [ ] Follow / Unfollow User
 - [ ] See full photo
 - [ ] Edit my profile 
-- [ ] Create account
+- [x] Create account
+- [x] Request Secret
+- [x] Confirm Secret
 - [ ] Log in 
 - [ ] Password, Auth
 - [ ] Upload a Photo 
 - [ ] Edit the Photo
 - [ ] Log out
+- [ ] See the feed
+
+#My challange
 - [ ] Delete Account
-- [ ] Direact Message
+- [ ] Direct Message
+- [ ] Post tags
+- [ ] Delete Comment
