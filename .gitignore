@@ -105,3 +105,5 @@ dist
 generated
 prisma.yml
 datamodel.prisma
+yarn.lock
+nodemon.json

@@ -3,15 +3,17 @@
 Instagram clone coding
 
 ## User OPs
-- [ ] See user Profile
-- [ ] See full photo
-- [ ] Edit my profile 
-- [ ] Log in 
-- [ ] Password, Auth
-- [ ] Upload a Photo 
-- [ ] Edit the Photo
+- [ ] Direct Message <b>WORKING ON IT!</b>
 - [ ] Log out
-- [ ] See the feed
+- [x] Auth
+- [x] Log in 
+- [x] Upload a Photo 
+- [x] Edit the Photo
+- [x] See the feed
+- [x] See my Profile
+- [x] See user Profile
+- [x] See full photo
+- [x] Edit my profile 
 - [x] Follow / Unfollow User
 - [x] Comment on a photo
 - [x] Like / Unlike a photo
@@ -21,8 +23,7 @@ Instagram clone coding
 - [x] Search by user
 - [x] Search by location
 
-#My challange
+## My challange
 - [ ] Delete Account
-- [ ] Direct Message
 - [ ] Post tags
 - [ ] Delete Comment

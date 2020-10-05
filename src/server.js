@@ -1,4 +1,4 @@
-
+import { isAuthenticated } from "./middlewares"
 import "./env";
 import { GraphQLServer } from "graphql-yoga";
 import logger from "morgan";
@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 4000;
 
 const server = new GraphQLServer({
   schema,
-  context: ({ request }) => ({ request })
+  context: ({ request }) => ({ request,isAuthenticated })
 });
 
 server.express.use(logger("dev"));
