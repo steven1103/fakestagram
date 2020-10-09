@@ -3,8 +3,7 @@
 Instagram clone coding
 
 ## User OPs
-- [ ] Direct Message <b>WORKING ON IT!</b>
-- [ ] Log out
+- [x] Direct Message 
 - [x] Auth
 - [x] Log in 
 - [x] Upload a Photo 

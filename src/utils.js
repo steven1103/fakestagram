@@ -10,16 +10,21 @@ export const generateSecret = () => {
   return `${adjectives[randomNumber]} ${noun[randomNumber]}`;
 };
 
-export const sendMail = (email) => {
-  const options = {
-    auth: {
-      api_key: process.env.MAILGUN_API,
-      domain: process.env.MAILGUN_DOMAIN,
-    },
-  };
-  const client = nodemailer.createTransport(mgTransport(options));
-  return client
-    .sendMail(email)
+export const sendMail = (emailS) => {
+ 
+
+  const client = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+      auth: {
+        user: process.env.EMAIL,
+        pass : process.env.SECRET
+      },
+      service:"gmail",
+      tls :{
+        rejectUnautorized : false
+      }
+  });
+  return client.sendMail(emailS)
     .then(() => {
       console.log("Message sent!");
     })
@@ -30,13 +35,13 @@ export const sendMail = (email) => {
 
 
 export const sendSecretMail = (adress, secret) => {
-  const email = {
-    from : "fakestagram@no-reply.com",
+  const emailS = {
+    from : `fakestagram@no-reply.com <fakestagram.no.reply@gmail.com>`,
     to : adress,
     subject : "Login Secret for FakeStagram",
     html : `Hi! Your login seret is <b>${secret}</b> <br/> Copy and Paste on the app`
   }
-  return sendMail(email)
+  return sendMail(emailS)
 }
 
 export const generateToken = id => jwt.sign({id}, process.env.JWT_SECRET)
